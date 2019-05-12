@@ -1,7 +1,7 @@
 pipeline {
     environment {
         PROJECT_NAME = 'toolbelt'
-        OUTPUT_DIR = '/var/public/toolbelt/'
+        OUTPUT_DIR = '/var/public/toolbeltdev/'
     }
     agent none
     stages {
@@ -43,7 +43,7 @@ pipeline {
             steps {
                 sh '''
                     rm -rf ${OUTPUT_DIR}*
-                    cp -r ./_site/* ${OUTPUT_DIR}
+                    cp -r ./* ${OUTPUT_DIR}
                 '''
             }
         }
