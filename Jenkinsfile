@@ -43,7 +43,7 @@ pipeline {
             steps {
                 sh '''
                     rm -rf ${OUTPUT_DIR}*
-                    cp -r ./* ${OUTPUT_DIR}
+                    cp -r ./dist/* ${OUTPUT_DIR}
                 '''
             }
         }
