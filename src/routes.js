@@ -1,8 +1,12 @@
-import URLEncoder from './views/URLEncoder'
+import URLEncode from './views/URLEncode'
 
 export default [
   {
     path: '/',
-    component: URLEncoder
+    component: URLEncode
+  },
+  {
+    path: '/url-encode',
+    component: URLEncode
   }
 ]

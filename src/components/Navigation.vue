@@ -1,27 +1,17 @@
 <template>
-  <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Toolbelt</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon" />
-      </button>
-      <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/">URL Encoder</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav>
+    <div class="pure-menu pure-menu-horizontal">
+      <a href="/#/" class="pure-menu-heading pure-menu-link">Toolbelt</a>
+      <ul class="pure-menu-list">
+        <router-link tag="li" class="pure-menu-item" to="/url-encode">
+          <a class="pure-menu-link">URL Encode</a>
+        </router-link>
+        <router-link tag="li" class="pure-menu-item" to="/docker-run">
+          <a class="pure-menu-link">Docker Run</a>
+        </router-link>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
