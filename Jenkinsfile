@@ -1,7 +1,7 @@
 pipeline {
     environment {
         PROJECT_NAME = 'toolbelt'
-        OUTPUT_DIR = '/var/public/toolbeltdev/'
+        OUTPUT_DIR = '/var/public/toolbelt/'
     }
     agent none
     stages {
